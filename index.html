@@ -1,26 +1,160 @@
-<body style="background-color: #000000; color: #ffffff; font-family: Arial, sans-serif; padding: 20px;">
-  <h1 style="text-align:center; color:#00ffff; font-size: 48px;">🏆 Mahalli Ligi Puan Durumu</h1>
+<!DOCTYPE html><html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mahalli Lig</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }h1 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 30px;
+}
 
-  <table style="width:80%; margin:auto; border-collapse:collapse; text-align:center; background-color: #111111; color: #ffffff; font-size: 28px;" border="2">
-    <thead style="background-color:#222222;">
-      <tr>
-        <th style="padding: 16px;">Takım</th>
-        <th style="padding: 16px;">O</th>
-        <th style="padding: 16px;">G</th>
-        <th style="padding: 16px;">M</th>
-        <th style="padding: 16px;">A</th>
-        <th style="padding: 16px;">Y</th>
-        <th style="padding: 16px;">AV</th>
-        <th style="padding: 16px;">P</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr><td style="padding: 16px;"><strong>Ormancıkspor</strong></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td style="padding: 16px;"><strong>Marmaraspor</strong></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td style="padding: 16px;"><strong>Çizmeci FK</strong></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-      <tr><td style="padding: 16px;"><strong>Çakmak Spor</strong></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-    </tbody>
-  </table>
+.button-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-  <p style="text-align:center; color:#aaaaaa; margin-top:30px; font-size: 24px;">🎯 <em>30 puana ilk ulaşan takım şampiyon olur!</em></p>
-</body>
+.button-container button {
+  background-color: #00ffff;
+  color: #000;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.table-container {
+  width: 90%;
+  max-width: 600px;
+  margin: auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #111;
+  color: #fff;
+  font-size: 18px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+thead {
+  background-color: #222;
+}
+
+p.note {
+  text-align: center;
+  color: #aaa;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+.card {
+  background-color: #111;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 0 10px #00ffff33;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #00ffff;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.team {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  color: #00ffff;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .name {
+    font-size: 16px;
+  }
+
+  .team {
+    font-size: 12px;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+  </style>
+</head>
+<body>  <div class="button-container">
+    <button onclick="document.getElementById('puan').scrollIntoView({behavior: 'smooth'});">🏆 Puan Durumu</button>
+    <button onclick="document.getElementById('oyuncular').scrollIntoView({behavior: 'smooth'});">👥 Oyuncular</button>
+  </div>  <h1 id="puan">🏆 Mahalli Ligi Puan Durumu</h1>  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Takım</th><th>O</th><th>G</th><th>M</th><th>A</th><th>Y</th><th>AV</th><th>P</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Ormancıkspor</strong></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><strong>Marmaraspor</strong></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><strong>Çizmeci FK</strong></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td><strong>Çakmak Spor</strong></td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </div>  <p class="note">🎯 <em>30 puana ilk ulaşan takım şampiyon olur!</em></p>  <h1 id="oyuncular">👥 Takım Oyuncuları</h1>  <div class="grid">
+    <!-- Oyuncular -->
+    <!-- Ormancıkspor -->
+    <div class="card"><img src="https://i.imgur.com/k9nKf6w.png" class="avatar"><div class="name">Semih</div><div class="team">Ormancıkspor</div></div>
+    <div class="card"><img src="https://i.imgur.com/k9nKf6w.png" class="avatar"><div class="name">Yalçın</div><div class="team">Ormancıkspor</div></div>
+    <div class="card"><img src="https://i.imgur.com/k9nKf6w.png" class="avatar"><div class="name">Yunus</div><div class="team">Ormancıkspor</div></div>
+    <div class="card"><img src="https://i.imgur.com/k9nKf6w.png" class="avatar"><div class="name">Çınar</div><div class="team">Ormancıkspor</div></div>
+    <div class="card"><img src="https://i.imgur.com/k9nKf6w.png" class="avatar"><div class="name">Levent</div><div class="team">Ormancıkspor</div></div>
+    <div class="card"><img src="https://i.imgur.com/k9nKf6w.png" class="avatar"><div class="name">Kağan</div><div class="team">Ormancıkspor</div></div><!-- Marmaraspor -->
+<div class="card"><img src="https://i.imgur.com/k9nKf6w.png" class="avatar"><div class="name">Yakup</div><div class="team">Marmaraspor</div></div>
+<div class="card"><img src="https://i.imgur.com/k9nKf6w.png" class="avatar"><div class="name">Suayp</div><div class="team">Marmaraspor</div></div>
+<div class="card"><img src="https://i.imgur.com/k9nKf6w.png" class="avatar"><
+
