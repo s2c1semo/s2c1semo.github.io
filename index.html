@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🏆 Mahalli Ligi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }header {
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px #00ffff55;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #00ffff;
+  font-family: 'Orbitron', sans-serif;
+}
+
+nav {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+nav a {
+  color: #00ffff;
+  text-decoration: none;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+}
+
+.puan-tablosu {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-size: 18px;
+  background-color: #111;
+}
+
+.puan-tablosu th, .puan-tablosu td {
+  border: 1px solid #333;
+  padding: 12px;
+  text-align: center;
+}
+
+.puan-tablosu thead {
+  background-color: #222;
+}
+
+.oyuncular {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.kart {
+  background-color: #111;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 10px #00ffff44;
+}
+
+.kart img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #00ffff;
+  margin-bottom: 10px;
+}
+
+.isim {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.takim {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 14px;
+  color: #00ffff;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #aaa;
+}
+
+.fikstur {
+  width: 90%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  font-size: 16px;
+  background-color: #111;
+}
+
+.fikstur th, .fikstur td {
+  border: 1px solid #333;
+  padding: 10px;
+  text-align: center;
+}
+
+.skor {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skor input {
+  width: 40px;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏆 Mahalli Ligi</h1>
+  </header>  <nav>
+    <a href="#puan">Puan Durumu</a>
+    <a href="#oyuncular">Oyuncular</a>
+    <a href="#fikstur">Fikstür</a>
+    <a href="#skor">Skor Güncelle</a>
+  </nav>  <section id="puan">
+    <table class="puan-tablosu">
+      <thead>
+        <tr>
+          <th>Takım</th><th>O</th><th>G</th><th>M</th><th>A</th><th>Y</th><th>AV</th><th>P</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Ormancıkspor</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Marmaraspor</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Çizmeci FK</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+        <tr><td>Çakmak Spor</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+      </tbody>
+    </table>
+  </section>  <section id="oyuncular" class="oyuncular">
+    <div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Semih</div><div class="takim">Ormancıkspor</div></div>
+    <div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Yalçın</div><div class="takim">Ormancıkspor</div></div>
+    <div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Yunus</div><div class="takim">Ormancıkspor</div></div>
+    <div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Çınar</div><div class="takim">Ormancıkspor</div></div>
+    <div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Levent</div><div class="takim">Ormancıkspor</div></div>
+    <div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Kağan</div><div class="takim">Ormancıkspor</div></div><div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Yakup</div><div class="takim">Marmaraspor</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Suayp</div><div class="takim">Marmaraspor</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Mert</div><div class="takim">Marmaraspor</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Rüştü</div><div class="takim">Marmaraspor</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Ömer</div><div class="takim">Marmaraspor</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Şahan</div><div class="takim">Marmaraspor</div></div>
+
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Enes</div><div class="takim">Çizmeci FK</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Yiğit</div><div class="takim">Çizmeci FK</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Akif</div><div class="takim">Çizmeci FK</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Eymen</div><div class="takim">Çizmeci FK</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Ahmet Efe</div><div class="takim">Çizmeci FK</div></div>
+
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Berat</div><div class="takim">Çakmak Spor</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Erdem</div><div class="takim">Çakmak Spor</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Emir</div><div class="takim">Çakmak Spor</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Mehmet</div><div class="takim">Çakmak Spor</div></div>
+<div class="kart"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png"><div class="isim">Burak</div><div class="takim">Çakmak Spor</div></div>
+
+  </section>  <section id="fikstur">
+    <table class="fikstur">
+      <thead>
+        <tr><th>Tarih</th><th>Maç</th><th>Stat</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>10 Temmuz</td><td>Ormancıkspor vs Marmaraspor</td><td>Ormancık Sahası</td></tr>
+        <tr><td>11 Temmuz</td><td>Çizmeci FK vs Çakmak Spor</td><td>Çizmeci Arena</td></tr>
+        <tr><td>13 Temmuz</td><td>Marmaraspor vs Çizmeci FK</td><td>Marmara Sahası</td></tr>
+      </tbody>
+    </table>
+  </section>  <section id="skor">
+    <h2 style="text-align:center; font-family: 'Orbitron', sans-serif; color:#00ffff">Skor Güncelle</h2>
+    <div class="skor">
+      <input type="text" placeholder="Takım 1"> <strong style="align-self:center">-</strong> <input type="text" placeholder="Takım 2">
+      <button onclick="alert('Skor güncellendi (sadece görsel)')">Kaydet</button>
+    </div>
+  </section>  <footer>
+    🎯 <em>30 puana ilk ulaşan takım şampiyon olur!</em>
+  </footer>
+</body>
+</html>
